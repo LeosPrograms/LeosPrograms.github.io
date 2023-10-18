@@ -8,13 +8,17 @@
     <title>DCAN</title>
     <style>
         body {
+            z-index: 1;
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 40px;
             background-color: #f7f7f7;
         }
-
+        .content {
+            z-index: 1;
+            position: relative;
+        }
         h1,
         h2 {
             color: #333;
@@ -77,6 +81,9 @@
 </head>
 
 <body>
+    <div class="content">
+
+    <!-- <img src="./birds.jpg" alt="DCAN" style="width: 400px; height: 100px; margin-right: 10px; vertical-align: middle; position: relative;"> -->
 
     <h1>The Distributed Collective Action Network</h1>
 
@@ -126,7 +133,10 @@
     </div>
 
 
-    <h2>Who's In?</h2>
+    <h2>
+        <img src="./whos-in.png" alt="Who's In?" style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
+        Who's In?
+    </h2>
     <p>
         Rooted in the principle of contingent agreement, this tool enables users to propose collective actions or events. With it, anyone can suggest a joint action or event, which other people can agree to on the contingency that every necessary role is filled. This allows group action to grow effortlessly from idea to reality without anyone having to worry about its viability.
     </p>
@@ -139,7 +149,9 @@
         </li>
     </ul>
 
-    <h2>Converge</h2>
+    <h2>
+        <img src="./converge.png" alt="Who's In?" style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
+        Converge</h2>
     <p>
         Focused on consensus-building, this tool allows stakeholders to shift focus from outcomes to refining a set of criteria that has maximal support. Using this list, they can evaluate and refine proposals to meet those broadly supported criteria.
     </p>
@@ -157,6 +169,7 @@
         Coming soon.
     </p>
 
+</div>
 </body>
 
 </html>
