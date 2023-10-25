@@ -77,13 +77,21 @@
         li {
             margin-bottom: 10px;
         }
+        /* .download-icon {
+            border: 1px solid black;
+            background-color: #b0d6ff;
+            height: 100px;
+        } */
+        .download-icon > img {
+            height: 20px;
+        }
     </style>
 </head>
 
 <body>
     <div class="content">
 
-    <!-- <img src="./birds.jpg" alt="DCAN" style="width: 400px; height: 100px; margin-right: 10px; vertical-align: middle; position: relative;"> -->
+    <img src="./birdflock.svg" alt="DCAN" style="height: auto; margin-right: 10px; vertical-align: middle; position: relative;">
 
     <h1>The Distributed Collective Action Network</h1>
 
@@ -133,7 +141,7 @@
     </div>
 
 
-    <h2>
+    <h2 id="whosin">
         <img src="./whos-in.png" alt="Who's In?" style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
         Who's In?
     </h2>
@@ -142,14 +150,41 @@
     </p>
     <ul>
         <li>
-            <a href="https://www.whos-in.io/">Web app</a>
+            <strong>
+                Try a demo in the web browser:<br>
+            </strong>
+            <a href="https://www.whos-in.io/">www.whos-in.io</a>
         </li>
         <li>
-            <a href="https://github.com/lightningrodlabs/whos-in/releases">Holochain app</a>
+            <strong>
+                Run a public serverless demo on your own machine, powered by Holochain: <br>
+            </strong>
+            <a href="./whosin_0.0.0_x64.dmg" class="download-icon">
+                <img src="./apple.png"/>
+                Download for Mac
+            </a><br>
+            <a href="./whosin_0.0.0_x64-setup.exe" class="download-icon">
+                <img src="./windows.png"/>
+                Download for Windows
+            </a><br>
+            <a href="./whosin_0.0.0_amd64.AppImage" class="download-icon">
+                <img src="./linux.png"/>
+                Download for Linux
+            </a>
+        </li>
+        <li>
+            <strong>
+                Run the Holochain app with a private group: <br>
+            </strong>
+            download the 
+            <a href="https://github.com/lightningrodlabs/whos-in/releases">webhapp</a>
+            and install it with the 
+            <a href="https://github.com/holochain/launcher/releases/tag/v0.9.4">Holochain Launcher</a>, and use a private network seed
+            
         </li>
     </ul>
 
-    <h2>
+    <h2 id="converge">
         <img src="./converge.png" alt="Who's In?" style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
         Converge</h2>
     <p>
@@ -157,14 +192,42 @@
     </p>
     <ul>
         <li>
-            <a href="https://www.convergence.tools/">Web app</a>
+            <strong>
+                Try a demo in the web browser:<br>
+            </strong>
+            <a href="https://www.convergence.tools/">www.convergence.tools</a>
         </li>
         <li>
-            <a href="https://github.com/lightningrodlabs/converge/releases">Holochain app</a>
+            <strong>
+                Run a public serverless demo on your own machine, powered by Holochain: <br>
+            </strong>
+            <a href="./converge_0.0.1_x64.dmg" class="download-icon">
+                <img src="./apple.png"/>
+                Download for Mac
+            </a><br>
+            <a href="./converge_0.0.1_x64-setup.exe" class="download-icon">
+                <img src="./windows.png"/>
+                Download for Windows
+            </a><br>
+            <a href="./converge_0.0.1_amd64.AppImage" class="download-icon">
+                <img src="./linux.png"/>
+                Download for Linux
+            </a>
+        </li>
+        <li>
+            <strong>
+                Run the Holochain app with a private group: <br>
+            </strong>
+            Download the 
+            <a href="https://github.com/lightningrodlabs/converge/releases">webhapp</a>
+            and install it with the 
+            <a href="https://github.com/holochain/launcher/releases/tag/v0.9.4">Holochain Launcher</a>, and use a private network seed
+            
         </li>
     </ul>
 
-    <h2>Goal-mapping tool</h2>
+    <h2>
+        Goal-mapping tool</h2>
     <p>
         Coming soon.
     </p>
