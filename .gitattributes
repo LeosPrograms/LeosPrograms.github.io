@@ -1,1 +1,2 @@
 converge_0.0.1_amd64.AppImage filter=lfs diff=lfs merge=lfs -text
+whosin_0.0.0_amd64.AppImage filter=lfs diff=lfs merge=lfs -text
