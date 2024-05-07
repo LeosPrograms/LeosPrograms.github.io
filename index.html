@@ -211,7 +211,7 @@
                 Try "Who's In?" in a group context alongside other apps, powered by Holochain:
             </strong><br>
 
-            1. Download Moss from <a href="https://theweave.social/moss/">theweave.social/moss</a><br>
+            1. Download Moss from <a id="visit-moss-1" href="https://theweave.social/moss/">theweave.social/moss</a><br>
             2. Create a Moss group and invite collaborators<br>
             3. Find "Who's in?" in the app store and install it in your group
         </li>
@@ -219,7 +219,7 @@
             <strong>
                 Try a legacy version in the web browser:<br>
             </strong>
-            <a href="https://www.whos-in.io/">www.whos-in.io</a>
+            <a id="visit-whosin-web" href="https://www.whos-in.io/">www.whos-in.io</a>
         </li>
         <!-- <li>
             <strong>
@@ -251,7 +251,7 @@
         </li> -->
         <li>
             <strong>Check out the Github</strong><br>
-            <a href="https://github.com/lightningrodlabs/whos-in">https://github.com/lightningrodlabs/whos-in</a>
+            <a id="visit-whosin-github" href="https://github.com/lightningrodlabs/whos-in">https://github.com/lightningrodlabs/whos-in</a>
         </li>
     </ul>
 
@@ -270,7 +270,7 @@
                 Try "Converge" in a group context alongside other apps, powered by Holochain:
             </strong><br>
 
-            1. Download Moss from <a href="https://theweave.social/moss/">theweave.social/moss</a><br>
+            1. Download Moss from <a id="visit-moss-2" href="https://theweave.social/moss/">theweave.social/moss</a><br>
             2. Create a Moss group and invite collaborators<br>
             3. Find "Converge" in the app store and install it in your group
         </li>
@@ -278,7 +278,7 @@
             <strong>
                 Try a legacy version in the web browser:<br>
             </strong>
-            <a href="https://www.convergence.tools/">www.convergence.tools</a>
+            <a id="visit-converge-web" href="https://www.convergence.tools/">www.convergence.tools</a>
         </li>
         <!-- <li>
             <strong>
@@ -310,7 +310,7 @@
         </li> -->
         <li>
             <strong>Check out the Github</strong><br>
-            <a href="https://github.com/lightningrodlabs/converge">https://github.com/lightningrodlabs/converge</a>
+            <a id="visit-converge-github" href="https://github.com/lightningrodlabs/converge">https://github.com/lightningrodlabs/converge</a>
         </li>
         <!-- <li>
             <strong>Instructions</strong><br>
@@ -333,17 +333,65 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y1YD9QJFXQ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-Y1YD9QJFXQ');
+    gtag('config', 'G-Y1YD9QJFXQ');
 
-  document.getElementById('download-whitepaper').addEventListener('click', function() {
+    document.getElementById('download-whitepaper').addEventListener('click', function() {
     gtag('event', 'download_whitepaper', {
         'event_category': 'Button Click',
         'event_label': 'Download PDF',
         'value': 1
     });
-  });
+    });
+
+    document.getElementById('visit-moss-1').addEventListener('click', function() {
+    gtag('event', 'visit-moss-1', {
+        'event_category': 'Button Click',
+        'event_label': 'Visit Moss for whosin',
+        'value': 1
+    });
+    });
+
+    document.getElementById('visit-moss-2').addEventListener('click', function() {
+    gtag('event', 'visit-moss-2', {
+        'event_category': 'Button Click',
+        'event_label': 'Visit Moss for converge',
+        'value': 1
+    });
+    });
+
+    document.getElementById('visit-whosin-web').addEventListener('click', function() {
+    gtag('event', 'visit-whosin-web', {
+        'event_category': 'Button Click',
+        'event_label': 'Visit Whosin web app',
+        'value': 1
+    });
+    });
+
+    document.getElementById('visit-converge-web').addEventListener('click', function() {
+    gtag('event', 'visit-converge-web', {
+        'event_category': 'Button Click',
+        'event_label': 'Visit Converge web app',
+        'value': 1
+    });
+    });
+
+    document.getElementById('visit-whosin-github').addEventListener('click', function() {
+        gtag('event', 'visit-whosin-github', {
+            'event_category': 'Button Click',
+            'event_label': 'Visit Whosin Github',
+            'value': 1
+        });
+    });
+
+    document.getElementById('visit-converge-github').addEventListener('click', function() {
+        gtag('event', 'visit-converge-github', {
+            'event_category': 'Button Click',
+            'event_label': 'Visit Converge Github',
+            'value': 1
+        });
+    });
 </script>
