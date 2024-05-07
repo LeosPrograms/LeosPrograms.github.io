@@ -127,6 +127,10 @@
             mask-repeat: no-repeat;
             -webkit-mask-repeat: no-repeat;
         }
+
+        li a {
+            display: inline;
+        }
     </style>
 </head>
 
@@ -153,7 +157,7 @@
     </p>
 
     <div class="whitepaper-link">
-        Read the <a href="./whitepaper.pdf">whitepaper</a>
+        Read the <a id="download-whitepaper" href="./whitepaper.pdf">whitepaper</a>
     </div>
 
     <div class="contact-link">
@@ -199,27 +203,36 @@
         Who's In?
     </h2>
     <p>
-        Who's In? enables users to propose collective actions or events. With it, anyone can suggest a joint action or event, which other people can agree to on the contingency that every necessary role is filled. This allows group action to grow effortlessly from idea to reality without anyone having to worry about its viability.
+        Who's In? enables users to propose events, shared tasks and agreements. With it, anyone can suggest a joint action or event, which other people can agree to on the contingency that every necessary role is filled. This allows group action to grow effortlessly from idea to reality without anyone having to worry about its viability.
     </p>
     <ul>
         <li>
             <strong>
-                Try a demo in the web browser:<br>
+                Try "Who's In?" in a group context alongside other apps, powered by Holochain:
+            </strong><br>
+
+            1. Download Moss from <a href="https://theweave.social/moss/">theweave.social/moss</a><br>
+            2. Create a Moss group and invite collaborators<br>
+            3. Find "Who's in?" in the app store and install it in your group
+        </li>
+        <li>
+            <strong>
+                Try a legacy version in the web browser:<br>
             </strong>
             <a href="https://www.whos-in.io/">www.whos-in.io</a>
         </li>
-        <li>
+        <!-- <li>
             <strong>
                 Run a public serverless demo on your own machine, powered by Holochain: <br>
             </strong>
             <a href="./whosin_0.0.0_x64.dmg" class="download-icon">
                 <img src="./apple.png"/>
                 Download for Mac
-            </a><br>
+            </a>&nbsp;
             <a href="./whosin_0.0.0_x64-setup.exe" class="download-icon">
                 <img src="./windows.png"/>
                 Download for Windows
-            </a><br>
+            </a>&nbsp;
             <a href="https://github.com/LeosPrograms/LeosPrograms.github.io/blob/a65d1801f2b95bb4e2627124a3cca06d7428f8c4/whosin_0.0.0_amd64.AppImage" class="download-icon">
                 <img src="./linux.png"/>
                 Download for Linux
@@ -235,7 +248,7 @@
             and installing it with the 
             <a href="https://github.com/holochain/launcher/releases/tag/v0.9.4">Holochain Launcher</a>
             
-        </li>
+        </li> -->
         <li>
             <strong>Check out the Github</strong><br>
             <a href="https://github.com/lightningrodlabs/whos-in">https://github.com/lightningrodlabs/whos-in</a>
@@ -248,25 +261,37 @@
     <p>
         Converge allows stakeholders to shift focus from outcomes to refining a set of criteria that has maximal support. Using this list, they can evaluate and refine proposals to meet those broadly supported criteria.
     </p>
+    <p>
+        You can learn more about the theory behind this software at the <a href="https://convergentfacilitation.org">Convergent Facilitation website</a>
+    </p>
     <ul>
         <li>
             <strong>
-                Try a demo in the web browser:<br>
+                Try "Converge" in a group context alongside other apps, powered by Holochain:
+            </strong><br>
+
+            1. Download Moss from <a href="https://theweave.social/moss/">theweave.social/moss</a><br>
+            2. Create a Moss group and invite collaborators<br>
+            3. Find "Converge" in the app store and install it in your group
+        </li>
+        <li>
+            <strong>
+                Try a legacy version in the web browser:<br>
             </strong>
             <a href="https://www.convergence.tools/">www.convergence.tools</a>
         </li>
-        <li>
+        <!-- <li>
             <strong>
                 Run a public serverless demo on your own machine, powered by Holochain: <br>
             </strong>
             <a href="./converge_0.0.1_x64.dmg" class="download-icon">
                 <img src="./apple.png"/>
                 Download for Mac
-            </a><br>
+            </a>&nbsp;
             <a href="./converge_0.0.1_x64-setup.exe" class="download-icon">
                 <img src="./windows.png"/>
                 Download for Windows
-            </a><br>
+            </a>&nbsp;
             <a href="https://github.com/LeosPrograms/LeosPrograms.github.io/blob/a65d1801f2b95bb4e2627124a3cca06d7428f8c4/converge_0.0.1_amd64.AppImage" class="download-icon">
                 <img src="./linux.png"/>
                 Download for Linux
@@ -282,22 +307,22 @@
             and installing it with the 
             <a href="https://github.com/holochain/launcher/releases/tag/v0.9.4">Holochain Launcher</a>
             
-        </li>
+        </li> -->
         <li>
             <strong>Check out the Github</strong><br>
             <a href="https://github.com/lightningrodlabs/converge">https://github.com/lightningrodlabs/converge</a>
         </li>
-        <li>
+        <!-- <li>
             <strong>Instructions</strong><br>
             Follow a list of <a href="https://docs.google.com/document/d/1aOlXsG1izRihehRje1g06kHk0Sy7iBDEhWCSDg1CnsY/">step-by-step instructions</a> to learn how to use Converge.
-        </li>
+        </li> -->
     </ul>
 
-    <h2>
+    <!-- <h2>
         Goal-mapping tool</h2>
     <p>
         Coming soon.
-    </p>
+    </p> -->
 
 </div>
 </body>
@@ -313,4 +338,12 @@
   gtag('js', new Date());
 
   gtag('config', 'G-Y1YD9QJFXQ');
+
+  document.getElementById('download-whitepaper').addEventListener('click', function() {
+    gtag('event', 'download_whitepaper', {
+        'event_category': 'Button Click',
+        'event_label': 'Download PDF',
+        'value': 1
+    });
+  });
 </script>
