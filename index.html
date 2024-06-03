@@ -41,6 +41,26 @@
             text-decoration: underline;
         }
 
+        /* not on mobile */
+        @media (min-width: 600px) {
+            /* .content {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 40px;
+                background-color: #fff;
+                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            } */
+            .flexidiv {
+                margin: 0 100px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
         .whitepaper-link,
         .contact-link,
         .signup-container {
@@ -48,6 +68,7 @@
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 100px;
         }
 
         .signup-container {
@@ -103,6 +124,7 @@
 
         .image-container {
             width: 100%;
+            height: 100px;
             height: 54px;
             margin-right: 10px;
             position: relative;
@@ -137,194 +159,241 @@
 <body>
     <div class="content">
 
-    <!-- Alert notice "Attention DWEB!" -->
-    <!-- <div style="background-color: #f7f7f7; padding: 20px; margin-bottom: 20px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); width:fit-content; border: 2px solid rgb(255, 60, 0); background-color: rgb(255, 250, 246);;">
-        <p style="margin: 0px;">
-            <strong>Attention DWeb!</strong> Click <a href="https://docs.google.com/document/d/1aOlXsG1izRihehRje1g06kHk0Sy7iBDEhWCSDg1CnsY/">here</a> for instructions to try out Converge.
-        </p>
-    </div> -->
+        <!-- Alert notice "Attention DWEB!" -->
+        <!-- <div style="background-color: #f7f7f7; padding: 20px; margin-bottom: 20px; box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); width:fit-content; border: 2px solid rgb(255, 60, 0); background-color: rgb(255, 250, 246);;">
+            <p style="margin: 0px;">
+                <strong>Attention DWeb!</strong> Click <a href="https://docs.google.com/document/d/1aOlXsG1izRihehRje1g06kHk0Sy7iBDEhWCSDg1CnsY/">here</a> for instructions to try out Converge.
+            </p>
+        </div> -->
 
-    <!-- <div class="image-blurred-edge"></div> -->
-    
-    <div class="image-container">
-        <img src="./birds.svg" class="birds" alt="bird flock">
-    </div>
-    <!-- <img src="./birds.svg" class="birds" alt="bird flock" style="width: 100%; height: 44px; object-fit: cover; object-position: center middle; margin-right: 10px; vertical-align: middle; position: relative;"> -->
-    <h1>The Distributed Collective Action Network</h1>
-
-    <p>
-        DCAN (Distributed Collective Action Network) is a set of tools to facilitate coordination and cohesion within any group of people, without relying on centralized decision-making. It includes a versatile social protocol for long-term planning, general problem-solving, and mobilization.
-    </p>
-
-    <div class="whitepaper-link">
-        Read the <a id="download-whitepaper" href="./whitepaper.pdf">whitepaper</a>
-    </div>
-
-    <div class="contact-link">
-        Contact: <a href="mailto:distributedcan@gmail.com">distributedcan@gmail.com</a>
-    </div>
-
-    <div class="signup-container">
-        Sign up for updates about the project:
-
-        <div id="mc_embed_signup">
-            <form action="https://gmail.us21.list-manage.com/subscribe/post?u=a003aef34c3e076a6422be9c5&amp;id=6e5f0e23e8&amp;f_id=001ce6e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                <div id="mc_embed_signup_scroll">
-                  <!-- <div style="font-size: 18px;">Sign up for updates on the project:</div> -->
-                  <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
-                  <div class="mc-field-group">
-                    <!-- <label for="mce-EMAIL">Email Address <span class="asterisk"></span></label> -->
-                    <input style="margin:4px 0;" placeholder="Email address" type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
-                <div id="mce-responses" class="clear foot">
-                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                    <div class="response" id="mce-success-response" style="display: none;"></div>
-                </div>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-                <input type="text" name="b_a003aef34c3e076a6422be9c5_6e5f0e23e8" tabindex="-1" value="">
+        <!-- <div class="image-blurred-edge"></div> -->
+        
+        <!-- <div class="image-container">
+            <img src="./birds.svg" class="birds" alt="bird flock">
+        </div> -->
+        <!-- <img src="./birds.svg" class="birds" alt="bird flock" style="width: 100%; height: 44px; object-fit: cover; object-position: center middle; margin-right: 10px; vertical-align: middle; position: relative;"> -->
+        <div style="display:flex; align-items:center;">
+            <img src="./birdflock2.png" class="birdflock" style="margin-right: 20px; width: 124px; border-radius: 100%;" alt="bird flock">
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+                <h1 style="margin:0; margin-top: 26px; line-height: 26px;;">
+                    The Distributed Collective Action Network
+                </h1>
+                <h3 style="margin:0; line-height: 26px; margin-bottom: 10px; font-style: italic;">Bring order without coersion to any organization or community</h3>
+                <ul style="display: flex; list-style-type: none; padding: 0; margin-top: -10px;">
+                    <li style="margin-right: 10px;"><a style="color: black" href="#software">Software</a></li>
+                    <li style="margin-right: 10px;"><a style="color: black" href="#paper">Whitepaper</a></li>
+                    <li><a style="color: black" href="#contact">Contact</a></li>
+                </ul>
             </div>
-                <div class="optionalParent">
-                    <div class="clear foot">
-                        <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                        <!-- <p style="margin: 0px auto;"><a href="http://eepurl.com/iBUH_U" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p> -->
-                    </div>
-                </div>
-            </div>
-            </form>
-            </div>
-            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+        </div>
+
+        <div class="flexidiv">
+
+            <p style="font-style: italic;">
+                The important question [is] whether societies of men are really capable or not of 
+                establishing good government from reflection and choice, or whether they are forever destined to depend for their 
+                political constitutions on accident and force.
+            </p>
+            <p style="text-align: right; margin-top: 0px;">
+                - Alexander Hamilton, Federalist No. 1
+            </p>
+
+            <h2>
+                Collective action is the problem
+            </h2>
+
+            <p>
+                Human history has seen myriad social structures as people have found new ways to play the game of conflict and cooperation. 
+                Clusters of individuals have formed collectives, hierarchies and cultures to tap into their synergistic power. 
+                This power has been used to increase productive forces and exploit or prevent exploitation by other groups. 
+                It has been remarked that this history can be summarized as a history of class struggles. 
+                However, the history of all hitherto existing class struggles is the history of collective action.
+            </p>
+
+            <p>
+                Collective action refers to the coordinated effort of a group of people to achieve a common goal. 
+                Most governments, corporations, and social movements are attempts at collective action.
+                Current forms of collective action, especially in capitalist economies, have proven so powerful they have changed every aspect of human life and the natural world.
+                A tension that remains, however, around the problem of <em>control.</em>
+                Who controls this immense power determines whos goals are achieved.
+                With this consideration, it is unfortunate that the most popular approaches to collective action today depend on a concentration of control.
+                It is also unfortunate that, once an approach is established, people often find it scary and difficult to change.
+            </p>
             
+            <h2>
+                DCAN is a solution
+            </h2>
+            <p>
+                The Distributed Collective Action Network (DCAN) is an approach to collective action that does not rely on centralized decision-making or coersion. 
+                It includes a versatile social protocol for long-term planning, general problem-solving, and mobilization.
+                It does not rely on voting, laws, or money. It relies on the free flow of information and human rationality. 
+                Most importantly, it is easy to adopt in whole or in part and can be used alongside other social systems.
+            </p>
 
-    </div>
+            <!-- <div class="whitepaper-link" id="whitepaper">
+                Read the <a id="download-whitepaper" href="./whitepaper.pdf">whitepaper</a>
+            </div> -->
 
+            <h2>
+                The model
+            </h2>
 
-    <h2 id="whosin">
-        <img src="./whos-in.png" alt="Who's In?" style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
-        Who's In?
-    </h2>
-    <p>
-        Who's In? enables users to propose events, shared tasks and agreements. With it, anyone can suggest a joint action or event, which other people can agree to on the contingency that every necessary role is filled. This allows group action to grow effortlessly from idea to reality without anyone having to worry about its viability.
-    </p>
-    <ul>
-        <li>
+            <!-- <h3>The collective action triad</h3> -->
+            <div>
+                <img src="./basic-model.svg" alt="collective action triad" 
+                style="height: fit-content; margin-top: 8px; margin-right: 20px; width: 200px; border: 1px solid; padding: 10px; margin-bottom: 20px; float: left;">
+                <p style="min-height: 180px;">
+                    Most systems of organizing have methods for planning, making decisions, and mobilizing people. 
+                    Each process can lead to either of the other processes. 
+                    Plans can be made to make decisions or mobilize people. 
+                    Decisions can be made to plan or mobilize people. People can be mobilized to make decisions or plans.
+                    The methods aren't always explicit, but they are always present.
+                    For this reason, any system of organizing must provide solutions for each process.
+                </p>
+            </div>
+            
+            <!-- <h3>Comparing models</h3> -->
+            <div>
+                <img src="./models-compared.svg" alt="models compared" 
+                style="height: fit-content; margin-top: 8px; margin-right: 20px; width: 300px; border: 1px solid; padding: 10px; margin-bottom: 20px; float: right;">
+                <p>
+                    The most popular solutions to collective action, such as corporate hierarchies, cooperatives, and constitutional governing bodies, 
+                    tend to fall somewhere on the spectrum between despotism and democracy. They tend to differ primarily in the way input is given toward a decision. 
+                    Once a decision is decreed, some level of force tends to be necessary to ensure full cooperation with a solution. 
+                    This is because, no matter how many people support a decision, they may not have an incentive to participate personally. 
+                    For example, someone may want a new park in their city, and may vote for one if given the opportunity, 
+                    but would not contribute personally to its construction with labor or money. Using participation-contingent agreements, 
+                    DCAN provides a solution to this problem that doesn't rely on coersion.
+                    Because of this, decision-making becomes less focused on creating an "official" or "valid" decision, 
+                    and more focused on building a sufficient degree of consensus among potential participants in an action.
+                     Similarly, planning becomes less of an official roadmap, and more of a map of shared objectives.
+                </p>
+            </div>
+
+            <h2>
+                What about conflict?
+            </h2>
+            <p>
+                If anyone can participate in any collective action, what is to prevent conflict between actions? What is to stop actions by one group that harm or evoke retaliation from other groups?
+                This question is answered in traditional organizing systems with a centralized enforcement mechanism, informed by official channels of deliberation.
+                DCAN provides no system for recognizing official channels of deliberation or enforcement mechanisms.
+                Instead, it provides tools for solving conflicts and forming consensus.
+                Collective actions can be seen by anyone, and if they appear to cause conflict, it is against the interest of participants to engage until this conflict is resolved.
+            </p>
+
+            <!-- <h2>Isn't that Anarchy?</h2> -->
+
+            <h2 id="software">How do I start using DCAN?</h2>
+            <p>The best way to start using DCAN is by using the tools built for Moss. 
+                This software is built on a user-hosted serverless architecture called Holochain.
+                By setting up a group in Moss and installing these tools, you can start using DCAN in your organization or community.
+                By using the software inside Moss, you can also gain access to other tools built for Holochain, such as alternatives to Trello, Google Docs, and Discord.
+            </p>
+
             <strong>
-                Try "Who's In?" in a group context alongside other apps, powered by Holochain:
+                To set up a group in Moss:
             </strong><br>
 
             1. Download Moss from <a id="visit-moss-1" href="https://theweave.social/moss/">theweave.social/moss</a><br>
             2. Create a Moss group and invite collaborators<br>
-            3. Find "Who's in?" in the app store and install it in your group
-        </li>
-        <li>
-            <strong>
-                Try a legacy version in the web browser:<br>
-            </strong>
-            <a id="visit-whosin-web" href="https://www.whos-in.io/">www.whos-in.io</a>
-        </li>
-        <!-- <li>
-            <strong>
-                Run a public serverless demo on your own machine, powered by Holochain: <br>
-            </strong>
-            <a href="./whosin_0.0.0_x64.dmg" class="download-icon">
-                <img src="./apple.png"/>
-                Download for Mac
-            </a>&nbsp;
-            <a href="./whosin_0.0.0_x64-setup.exe" class="download-icon">
-                <img src="./windows.png"/>
-                Download for Windows
-            </a>&nbsp;
-            <a href="https://github.com/LeosPrograms/LeosPrograms.github.io/blob/a65d1801f2b95bb4e2627124a3cca06d7428f8c4/whosin_0.0.0_amd64.AppImage" class="download-icon">
-                <img src="./linux.png"/>
-                Download for Linux
-            </a>
-            <p>NOTE: If you want to start a private group using this app, click <em>MENU > CHANGE PROFILE</em> and add a network seed. Everyone who uses the same network seed (case-sensitive) will be on the same private network.</p>
-        </li>
-        <li>
-            <strong>
-                If you run into issues installing the app you can also try: <br>
-            </strong>
-            Downloading the 
-            <a href="./whosin.webhapp">webhapp</a>, 
-            and installing it with the 
-            <a href="https://github.com/holochain/launcher/releases/tag/v0.9.4">Holochain Launcher</a>
+            3. Find "Converge" and "Who's in?" in the app store and install them in your group
+
+            <h2 id="whosin">
+                <img src="./whos-in.png" alt="Who's In?" style="width: 50px; height: 50px; vertical-align: middle;">
+                Who's In?
+            </h2>
+            <p>
+                Who's In? enables users to propose events, shared tasks and agreements. With it, anyone can suggest a joint action or event, which other people can agree to on the contingency that every necessary role is filled. This allows group action to grow from idea to reality without anyone having to worry about its viability.
+            </p>
+            <p>
+                Legacy browser version: 
+                <a id="visit-whosin-web" href="https://www.whos-in.io/">www.whos-in.io</a>
+                <br>
+                Github:
+                <a id="visit-whosin-github" href="https://github.com/lightningrodlabs/whos-in">https://github.com/lightningrodlabs/whos-in</a>
+            </p>
+
+            <h2 id="converge">
+                <img src="./converge.png" alt="Who's In?" style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
+                Converge</h2>
+            <p>
+                Converge allows stakeholders to shift focus from outcomes to refining a set of criteria that has maximal support. Using this list, they can evaluate and refine proposals to meet those broadly supported criteria.
+            </p>
+            <p>
+                Read about theory behind this process: <a href="https://convergentfacilitation.org">https://convergentfacilitation.org</a>
+                <br>
+                Legacy browser version:
+                <a id="visit-converge-web" href="https://www.convergence.tools/">www.convergence.tools</a>
+                <br>
+                Github:
+                <a id="visit-converge-github" href="https://github.com/lightningrodlabs/converge">https://github.com/lightningrodlabs/converge</a>
+                <!-- <li>
+                    <strong>Instructions</strong><br>
+                    Follow a list of <a href="https://docs.google.com/document/d/1aOlXsG1izRihehRje1g06kHk0Sy7iBDEhWCSDg1CnsY/">step-by-step instructions</a> to learn how to use Converge.
+                </li> -->
+            </p>
+
+            <h2 id="paper">
+                Where can I learn more?
+            </h2>
+            <p>
+                <!-- whitepaper -->
+                If you wish to learn more about the Distributed Collective Action Network, you can read the whitepaper.
+            </p>
+            <!-- embedded whitepaper link -->
+            <div>
+                <iframe id="whitepaper" src="./whitepaper-2.pdf" width="100%" height="500px"></iframe>
+            </div>
+
+            <h2 id="contact">Contact</h2>
+            <div class="contact-link">
+                Email: <a href="mailto:distributedcan@gmail.com">distributedcan@gmail.com</a>
+            </div>
+
+            <div class="signup-container">
+                Sign up for updates about the project:
+
+                <div id="mc_embed_signup">
+                    <form action="https://gmail.us21.list-manage.com/subscribe/post?u=a003aef34c3e076a6422be9c5&amp;id=6e5f0e23e8&amp;f_id=001ce6e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                        <div id="mc_embed_signup_scroll">
+                        <!-- <div style="font-size: 18px;">Sign up for updates on the project:</div> -->
+                        <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
+                        <div class="mc-field-group">
+                            <!-- <label for="mce-EMAIL">Email Address <span class="asterisk"></span></label> -->
+                            <input style="margin:4px 0;" placeholder="Email address" type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                        </div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                        <input type="text" name="b_a003aef34c3e076a6422be9c5_6e5f0e23e8" tabindex="-1" value="">
+                    </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                                <!-- <p style="margin: 0px auto;"><a href="http://eepurl.com/iBUH_U" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p> -->
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                    </div>
+                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
+                    
+
+            <!-- </div> -->
+
+
             
-        </li> -->
-        <li>
-            <strong>Check out the Github</strong><br>
-            <a id="visit-whosin-github" href="https://github.com/lightningrodlabs/whos-in">https://github.com/lightningrodlabs/whos-in</a>
-        </li>
-    </ul>
 
-    <h2 id="converge">
-        <img src="./converge.png" alt="Who's In?" style="width: 50px; height: 50px; margin-right: 10px; vertical-align: middle;">
-        Converge</h2>
-    <p>
-        Converge allows stakeholders to shift focus from outcomes to refining a set of criteria that has maximal support. Using this list, they can evaluate and refine proposals to meet those broadly supported criteria.
-    </p>
-    <p>
-        You can learn more about the theory behind this software at the <a href="https://convergentfacilitation.org">Convergent Facilitation website</a>
-    </p>
-    <ul>
-        <li>
-            <strong>
-                Try "Converge" in a group context alongside other apps, powered by Holochain:
-            </strong><br>
+            <!-- <h2>
+                Goal-mapping tool</h2>
+            <p>
+                Coming soon.
+            </p> -->
+        </div>
 
-            1. Download Moss from <a id="visit-moss-2" href="https://theweave.social/moss/">theweave.social/moss</a><br>
-            2. Create a Moss group and invite collaborators<br>
-            3. Find "Converge" in the app store and install it in your group
-        </li>
-        <li>
-            <strong>
-                Try a legacy version in the web browser:<br>
-            </strong>
-            <a id="visit-converge-web" href="https://www.convergence.tools/">www.convergence.tools</a>
-        </li>
-        <!-- <li>
-            <strong>
-                Run a public serverless demo on your own machine, powered by Holochain: <br>
-            </strong>
-            <a href="./converge_0.0.1_x64.dmg" class="download-icon">
-                <img src="./apple.png"/>
-                Download for Mac
-            </a>&nbsp;
-            <a href="./converge_0.0.1_x64-setup.exe" class="download-icon">
-                <img src="./windows.png"/>
-                Download for Windows
-            </a>&nbsp;
-            <a href="https://github.com/LeosPrograms/LeosPrograms.github.io/blob/a65d1801f2b95bb4e2627124a3cca06d7428f8c4/converge_0.0.1_amd64.AppImage" class="download-icon">
-                <img src="./linux.png"/>
-                Download for Linux
-            </a>
-            <p>NOTE: If you want to start a private group using this app, click <em>MENU > CHANGE PROFILE</em> and add a network seed. Everyone who uses the same network seed (case-sensitive) will be on the same private network.</p>
-        </li>
-        <li>
-            <strong>
-                If you run into issues installing the app you can also try: <br>
-            </strong>
-            Downloading the 
-            <a href="./converge.webhapp">webhapp</a>, 
-            and installing it with the 
-            <a href="https://github.com/holochain/launcher/releases/tag/v0.9.4">Holochain Launcher</a>
-            
-        </li> -->
-        <li>
-            <strong>Check out the Github</strong><br>
-            <a id="visit-converge-github" href="https://github.com/lightningrodlabs/converge">https://github.com/lightningrodlabs/converge</a>
-        </li>
-        <!-- <li>
-            <strong>Instructions</strong><br>
-            Follow a list of <a href="https://docs.google.com/document/d/1aOlXsG1izRihehRje1g06kHk0Sy7iBDEhWCSDg1CnsY/">step-by-step instructions</a> to learn how to use Converge.
-        </li> -->
-    </ul>
-
-    <!-- <h2>
-        Goal-mapping tool</h2>
-    <p>
-        Coming soon.
-    </p> -->
-
-</div>
+    </div>
 </body>
 
 </html>
